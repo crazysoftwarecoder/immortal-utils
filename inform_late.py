@@ -35,6 +35,6 @@ try:
         late_severity = int(how_late)
         if (int(how_late) > 2) and int((how_late) < 1):
                 sys.exit('how_late can only be between 1 and 2 (both inclusive)')
-                messager.shoot_message(how_late)
+        messager.shoot_message(how_late)
 except ValueError:
         messager.shoot_message('1', how_late)
